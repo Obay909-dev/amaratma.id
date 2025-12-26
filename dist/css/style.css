@@ -1,0 +1,621 @@
+/* importing google fonts - inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap');
+
+body {
+  background-image: url(/assets/images/backgorundweb.png);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Poppins", serif;
+}
+
+/* Button Wa dan IG */
+
+.btn-kim {
+  position: fixed;
+  bottom: 160px;
+  right: 40px;
+  overflow: hidden;
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  border: 0;
+  z-index: 9999;
+  color: rgb(228, 241, 207);
+  transition: .25;
+  background-color: green;
+}
+
+.btn-kim:hover {
+  width: auto;
+  padding: 0 20px;
+  cursor: pointer;
+}
+
+.btn-kim span {
+  font-size: 14px;
+  margin-left: 5px;
+  transition: .2s;
+  line-height: 0px;
+  display: none;
+  white-space: nowrap;
+}
+
+.btn-kim:hover span {
+  display: inline-block;
+}
+
+.btn-floating {
+  position: fixed;
+  bottom: 100px;
+  right: 40px;
+  overflow: hidden;
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  border: 0;
+  z-index: 9999;
+  color: rgb(228, 241, 207);
+  transition: .25;
+  background-color: green;
+}
+
+.fab.fa-whatsapp.my-float {
+  height: 30px;
+  width: 30px;
+  margin-top: 10px;
+}
+.btn-floating:hover {
+  width: auto;
+  padding: 0 20px;
+  cursor: pointer;
+}
+
+.btn-floating span {
+  font-size: 14px;
+  margin-left: 5px;
+  transition: .2s;
+  line-height: 0px;
+  display: none;
+  white-space: nowrap;
+}
+
+.btn-floating:hover span {
+  display: inline-block;
+}
+
+.btn-instagram {
+  position: fixed;
+  bottom: 220px;
+  right: 40px;
+  overflow: hidden;
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  border: 0;
+  z-index: 9999;
+  color: rgb(228, 241, 207);
+  transition: .25;
+  background-color: #E1306C;
+}
+.fab.fa-instagram.my-float {
+  height: 30px;
+  width: 30px;
+  margin-top: 10px;
+}
+
+.btn-instagram:hover {
+  width: auto;
+  padding: 0 20px;
+  cursor: pointer;
+}
+
+.btn-instagram span {
+  font-size: 14px;
+  margin-left: 5px;
+  transition: .2s;
+  line-height: 0px;
+  display: none;
+  white-space: nowrap;
+}
+
+.btn-instagram:hover span {
+  display: inline-block;
+}
+/* Button Wa dan IG */
+.logo img {
+  width: 200px;
+}
+.container{
+  width: 80%;
+  margin-inline: auto;
+}
+
+@media (max-width:992px) {
+  .container{
+    width: 90%;
+  }
+}
+
+/* Navbar */
+.navbar{
+  padding: 30px 0;
+}
+
+.navbar-box{
+  display: flex;
+  justify-content:
+  space-between;
+  align-items: center;
+}
+
+.navbar-box .menu {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.navbar-box .menu li{
+  list-style-type: none;
+}
+
+.navbar-box .menu li a{
+  text-decoration: none;
+  color: #000000;
+  font-weight: 500;
+  
+} 
+@media (max-width:768px) {
+  .navbar-box{
+    flex-direction: column;
+    gap: 20px;
+  }
+.navbar-box .menu {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+}
+/* Navbar */
+
+
+/* Hero */
+.hero-box{
+  background-image: url(/assets/images/vbgv2.png);
+  width: 100%;
+  border-radius: 10px;
+  padding: 20px  20px;
+  color: rgb(19, 18, 18);
+}
+.hero-box a:hover{
+  background-color: rgb(243, 137, 8);
+}
+.hero-box h1{
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.hero-box p{
+  margin-bottom: 30px;
+  line-height: 2;
+  width: 500px;
+  opacity: 75%;
+}
+.hero-box a{
+  text-decoration: none;
+  background-color: rgba(255, 201, 8, 0.616);
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 50px;
+  font-size: 18px;
+}
+.hero-box a:hover{
+  background-color: rgba(255, 201, 8, 0.616);
+}
+@media (max-width:575px) {
+  .hero-box p{
+    width: 100%;
+  }
+}
+@media (max-width:475px) {
+  .hero-box h1{
+    font-size: 30px;
+  }
+  .hero-box p{
+    font-size: 14px;
+  }
+}
+/* Hero */
+
+
+/* Card List */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+.section-heading{
+  padding: 25px;
+  text-align: center;
+}
+.card-wrapper {
+  max-width: 1100px;
+  margin: 0 60px 35px;
+  padding: 20px 10px;
+  overflow: hidden;
+}
+.card-list .card-item {
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+.card-list .card-item .card-link {
+  user-select: none;
+  display: block;
+  background: #d7a81c61;
+  padding: 18px;
+  border-radius: 12px;
+  text-decoration: none;
+  border: 2px solid transparent;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+  transition: 0.2s ease;
+}
+
+.card-list .card-item .card-link:active {
+  cursor: grabbing;
+}
+
+.card-list .card-item .card-link:hover {
+  border-color: #eec65a;
+}
+
+.card-list .card-link .card-image {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card-list .card-item .badge{
+  color: antiquewhite;
+  padding: 8px 16px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin: 16px 0 18px;
+  background: rgb(241, 181, 104);
+  width: fit-content;
+  border-radius: 50px;
+}
+
+.card-list .card-item .badge.yamutibatch2 {
+  color: #c1cb28;
+  background: #f0e6d2;
+}
+
+.card-list .card-item .badge.nurulmilah {
+  color: #d99623;
+  background: #f0e6d2;
+}
+
+.card-list .card-item .badge.bina {
+  color: #c96818;
+  background: #f0e6d2;
+}
+
+.card-list .card-item .badge.amanah {
+  color: #785418;
+  background: #f0e6d2;
+}
+
+.card-list .card-item .badge.papeditas {
+  color: #efc33e;
+  background: #f0e6d2;
+}
+
+.card-list .card-item .badge.firstgathering {
+  color: #bc6d0d;
+  background: #f0e6d2;
+}
+
+.card-list .card-item .badge.batch1 {
+  color: #bc6d0d;
+  background: #f0e6d2;
+}
+
+.card-list .card-item .card-title {
+  font-size: 1.19rem;
+  font-weight: 600;
+  color: #000000;
+  display: flex;
+}
+
+.card-list .card-link .card-button {
+  height: 35px;
+  width: 35px;
+  color: rgb(254, 198, 129);
+  border-radius: 50%;
+  margin: 30px 0 5px;
+  background: none;
+  cursor: pointer;
+  border: 2px solid #eec65a;
+  transform: rotate(-45deg);
+}
+
+.card-list .card-link:hover .card-button {
+  background: #eec65a;
+  color: #ffffff;
+}
+
+.card-wrapper .swiper-pagination-bullet{
+  height: 13px;
+  width: 13px;
+  background-color: rgb(216, 174, 104);
+  opacity: 0.5;
+}
+
+.card-wrapper .swiper-pagination-bullet-active{
+  background-color: rgb(243, 137, 8);
+  opacity: 1;
+}
+
+.card-wrapper .swiper-slide-button{
+  color: rgb(216, 174, 104);
+  margin-top: -35px;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 768px) {
+  .card-wrapper {
+    margin: 0 10px 25px;
+  }
+
+  .card-wrapper .swiper-slide-button{
+    display: none;
+  }
+  
+}
+/* Card List */
+
+/* Tentang Kami */
+.tentang{
+  padding: 150px 0;
+}
+
+
+.tentang-box h1{
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.tentang-box p{
+  line-height: 2;
+  text-align: justify;
+}
+
+.tentang .info{
+  display: flex;
+  justify-content:
+  space-around ;
+  text-align: center;
+  flex-wrap:wrap ;
+  gap: 30px;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.tentang .info h2 span{
+  color: rgb(116, 73, 73);
+  font-size: 40px;
+}
+
+@media (max-width:768px) {
+  .tentang-box{
+    grid-template-columns: 1fr;
+  }
+} 
+
+/* Tentang Kami */
+
+/* Filosofi */
+.filosofi{
+  padding-bottom: 100px;
+  justify-content: center;
+}
+
+.filosofi-box img {
+  width: 50%;
+  height: 100%;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 50px;
+  display: block;
+  margin: 0 auto;
+}
+
+.filosofi-box .desc {
+  padding: 20px;
+}
+.filosofi-box .desc p{
+  line-height: 2;
+}
+
+@media (max-width:575px) {
+  .filosofi-box{
+    gap: 40px;
+  }
+}
+/* Filosofi */
+
+/* Open Recruitment */
+.reqruitment{
+  padding-block: 50px;
+}
+
+.reqruitment-box{
+  display: grid;
+  grid-template-columns: repeat(
+     2, 1fr);
+  gap: 30px;
+  align-items: center;
+  text-align: center;
+}
+.reqruitment-box img{
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 10px 10px 20px 
+  rgba(0, 0, 0, 0.1);
+}
+.reqruitment-box h2{
+  margin-bottom: 10px;
+}
+
+.reqruitment-box p{
+  line-height: 2;
+  margin-bottom: 20px;
+}
+.reqruitment-box a{
+  text-decoration: none;
+  color: white;
+  background-color: navajowhite;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 18px;
+}
+.reqruitment-box a:hover{
+  background-color: rgb(255, 173, 73);
+}
+
+@media (max-width:768px) {
+  .reqruitment-box{
+    grid-template-columns: 1fr;
+  }
+}
+/* Open Recruitment */
+
+/* Footer */
+footer{
+  margin-top: 100px;
+  padding: 50px 0;
+  background-color: rgba(75, 57, 57, 0.8);
+  color: white;
+}
+.footer-box{
+  display: flex;
+  justify-content:
+  space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  row-gap: 50px;
+}
+.footer-box h2{
+  margin-bottom: 20px;
+}
+.footer-boxp p{
+  line-height: 2;
+  font-size: 14px;
+  text-align: justify;
+}
+.footer-box .box:nth-child(1){
+  width: 400px;
+}
+
+.footer-box .social{
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.footer-box .social a{
+  font-size: 30px;
+  text-decoration: none;
+  color: white;
+}
+
+.footer-box .social a:hover{
+  color: rgb(255, 173, 73);
+}
+.footer-box .box:nth-child(2){
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.footer-box .box:nth-child(2) a{
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+.footer-box .box:nth-child(2) a:hover{
+  color: rgb(255, 173, 73);
+} 
+.footer-box .box:nth-child(2) h2{
+  margin-bottom: 0;
+}
+.footer-box .box:nth-child(3){
+  width: 300px;
+}
+.footer-box .box:nth-child(3) p{
+  margin-bottom: 10px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.copyright{
+  margin-top: 50px;
+  text-align: center;
+ 
+}
+.copyright p{
+  font-size: 14px;
+}
+.copyright p span{
+  font-weight: bold;
+}
+
+
+/* Scroll Up */
+.scroll-up{
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255, 201, 8, 0.616);
+  color: white;
+  border-radius: 100px;
+  display: grid;
+  place-items: center;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  opacity: 0;
+  transition: all 0.s ease;
+}
+.scroll-up.scroll-active{
+  opacity: 1;
+}
+/* Scroll Up */
+/* Footer */
+
+.phone {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.email {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
